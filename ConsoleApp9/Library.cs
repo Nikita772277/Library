@@ -9,20 +9,27 @@ namespace ConsoleApp9
     internal class Library
     {
         private Book[] book = new Book[7];
-        public void GetListOfBooks()
+        public void GetListOfBooks()//Выдать список книг
+        {
+            foreach (Book book in book)
+            {
+                Console.WriteLine(book);
+            }
+        }
+        public void DeleteBook()//Удалить книгу
         {
 
         }
-        public void DeleteBook()
+        public void AddBook()//Добавить книгу
         {
-
-        }
-        public void AddBook()
-        {
-         Book book=new Book();
-            book.SetAuthorBook();
-            book.SetTitleBook();
-            book.SetYearOfRelease();
+         Book boook=new Book();
+            boook.SetAuthorBook();
+            boook.SetTitleBook();
+            boook.SetYearOfRelease();
+            for(int i = 0; i < book.Length; i++)
+            {
+                book[i] = new Book();
+            }
         }
     }
 }

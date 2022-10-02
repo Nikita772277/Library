@@ -30,3 +30,6 @@ void UseMenu()
         book.GetInformation();
     }
 }
+GetMenu();
+UseMenu();
+library.GetListOfBooks();
