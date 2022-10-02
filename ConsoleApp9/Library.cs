@@ -28,7 +28,7 @@ namespace ConsoleApp9
             boook.SetYearOfRelease();
             for(int i = 0; i < book.Length; i++)
             {
-                book[i] = new Book();
+                book[i] = boook;
             }
         }
     }
