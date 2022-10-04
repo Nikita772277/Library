@@ -19,7 +19,7 @@ void UseMenu()
      AddBook=int.Parse(a);
     if (AddBook == 1)
     {
-        library.AddBook();
+        library.AddBook(book);
     }
     else if (AddBook == 2)
     {
